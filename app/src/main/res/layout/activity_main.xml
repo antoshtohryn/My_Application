@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/my_text"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello world!"
@@ -23,6 +23,7 @@
 
     <Button
         android:id="@+id/button"
+        android:textSize="25sp"
         android:backgroundTint="#09BFF6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,10 +37,11 @@
 
     <Button
         android:id="@+id/button2"
+        android:textSize="25sp"
         android:backgroundTint="@color/teal_200"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="20dp"
         android:onClick="changeColor"
         android:text="Change color"
         app:layout_constraintBottom_toTopOf="@+id/button"
