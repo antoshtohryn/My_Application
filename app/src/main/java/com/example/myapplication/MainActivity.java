@@ -2,6 +2,7 @@ package com.example.myapplication;
 
         import androidx.appcompat.app.AppCompatActivity;
 
+        import android.graphics.Color;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.TextView;
@@ -14,10 +15,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /** Called when the user touches the button */
-    public void sendMessage(View view)
+    public void changeText(View view)
     {
-        TextView text_my_application = (TextView)findViewById(R.id.my_text);
-        text_my_application.setText("My first lab!");
+        TextView my_text = (TextView)findViewById(R.id.my_text);
+        my_text.setText("My first lab!");
+    }
+
+    public void changeColor(View view)
+    {
+        TextView my_text = (TextView)findViewById(R.id.my_text);
+        my_text.setTextColor(Color.parseColor("#01FEFA"));;
     }
 }
