@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
     public void changeColor(View view)
     {
         TextView my_text = (TextView)findViewById(R.id.my_text);
-        my_text.setTextColor(Color.parseColor("#01FEFA"));;
+        if (my_text.getCurrentTextColor() == Color.parseColor("#C500FF")) {
+            my_text.setTextColor(Color.parseColor("#661A52"));
+        }
+        else if (my_text.getCurrentTextColor() == Color.parseColor("#661A52")) {
+            my_text.setTextColor(Color.parseColor("#C500FF"));
+        }
     }
 }
